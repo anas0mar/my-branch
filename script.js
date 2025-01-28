@@ -18,6 +18,7 @@ function addProduct() {
     const orderItemDiv = document.createElement("div");
     orderItemDiv.classList.add("order-item");
 
+    // إنشاء قائمة اختيار المنتج
     const productSelect = document.createElement("select");
     productSelect.name = `product-${orderItemCount}`;
     Object.keys(productsData).forEach(product => {
@@ -27,11 +28,14 @@ function addProduct() {
         productSelect.appendChild(option);
     });
 
+    // إنشاء قائمة اختيار المقاسات
     const sizeSelect = document.createElement("select");
     sizeSelect.name = `size-${orderItemCount}`;
+
+    // تحديث قائمة المقاسات بناءً على المنتج المختار
     productSelect.addEventListener("change", function () {
         const selectedProduct = this.value;
-        sizeSelect.innerHTML = "";
+        sizeSelect.innerHTML = ""; // تفريغ الخيارات السابقة
         productsData[selectedProduct].forEach(size => {
             const sizeOption = document.createElement("option");
             sizeOption.value = size;
@@ -39,18 +43,23 @@ function addProduct() {
             sizeSelect.appendChild(sizeOption);
         });
     });
+
+    // استدعاء الحدث لتعبئة القائمة في البداية
     productSelect.dispatchEvent(new Event("change"));
 
+    // إدخال الكمية
     const quantityInput = document.createElement("input");
     quantityInput.type = "number";
     quantityInput.placeholder = "العدد";
 
+    // زر إزالة المنتج
     const removeButton = document.createElement("button");
     removeButton.innerText = "إزالة";
     removeButton.onclick = function () {
         orderItemDiv.remove();
     };
 
+    // إضافة جميع العناصر إلى العنصر الرئيسي
     orderItemDiv.appendChild(productSelect);
     orderItemDiv.appendChild(sizeSelect);
     orderItemDiv.appendChild(quantityInput);
