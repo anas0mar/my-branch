@@ -118,6 +118,10 @@ function changeLanguage(language) {
 
     const elements = translations[language];
     for (const id in elements) {
-        document.getElementById(id).innerText = elements[id];
+        const element = document.getElementById(id);
+        if (element) {
+            element.innerText = elements[id];
+        }
     }
 }
+
