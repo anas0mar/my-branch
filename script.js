@@ -103,16 +103,22 @@ function changeLanguage(language) {
         ar: {
             "site-title": "Roott Implant System",
             "branch-title": "فرع إسكندرية",
+            "branch-address": "العصافرة بحري، شارع سليمان الفارسي، بجوار جزارة الحمد",
+            "products-title": "المنتجات",
             "order-title": "لطلب الأوردر، اضغط هنا:",
             "add-product-button": "إضافة منتج",
-            "submit-button": "إرسال الطلب"
+            "submit-button": "إرسال الطلب",
+            "footer-text": "حقوق النشر © 2025 Roott Implant System"
         },
         en: {
             "site-title": "Roott Implant System",
             "branch-title": "Alexandria Branch",
+            "branch-address": "Al-Asafra Bahari, Sulaiman Al-Farsi Street, Next to Al-Hamd Butchery",
+            "products-title": "Products",
             "order-title": "To place an order, click here:",
             "add-product-button": "Add Product",
-            "submit-button": "Submit Order"
+            "submit-button": "Submit Order",
+            "footer-text": "Copyright © 2025 Roott Implant System"
         }
     };
 
@@ -124,4 +130,3 @@ function changeLanguage(language) {
         }
     }
 }
-
