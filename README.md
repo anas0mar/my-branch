@@ -9,6 +9,8 @@
 </head>
 <body>
     <header>
+            <img src="https://raw.githubusercontent.com/username/repository/main/images/logo.png" alt="Logo" style="width: 150px; height: auto;">
+
         <h1 id="site-title">Roott Implant System</h1>
         <h2 id="branch-title">فرع إسكندرية</h2>
         <p id="branch-address">العصافرة بحري، شارع سليمان الفارسي، بجوار جزارة الحمد</p>
