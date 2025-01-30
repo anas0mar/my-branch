@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-            <img src="https://github.com/anas0mar/my-branch/blob/main/Untitled%20design.png" alt="Logo" style="width: 50px; height: auto;">
+            <img src="https://github.com/anas0mar/my-branch/blob/main/Untitled%20design.png" alt="Logo" style="width: 250px; height: auto;">
 
         <h1 id="site-title">Roott Implant System</h1>
         <h2 id="branch-title">فرع إسكندرية</h2>
